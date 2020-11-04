@@ -13,9 +13,7 @@ services:
         ipv4_address: 10.0.10.3
   my-container:
     container_name: my-container
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: shtokala/product
     ports:
       - 8080:8080
     restart: always
